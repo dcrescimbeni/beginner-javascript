@@ -10,3 +10,10 @@ pizzaElement.insertAdjacentText('beforeend', '🍕')
 // Working with classes
 const imageClass = document.querySelector('.nice')
 console.log(imageClass.classList);
+// imageClass.classList.remove('cool')
+// imageClass.classList.add('round')
+// imageClass.classList.toggle('round')
+function transformImage() {
+  imageClass.classList.toggle('round')
+}
+imageClass.addEventListener('click', transformImage)
