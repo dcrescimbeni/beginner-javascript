@@ -10,6 +10,6 @@ const myHTML = `
 `
 
 const myFragment =  document.createRange().createContextualFragment(myHTML)
-myFragment.querySelector('img').alt = 'another string'
+myFragment.querySelector('img').alt = 'another string'  // You can target elements
 
 document.body.appendChild(myFragment)
